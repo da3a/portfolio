@@ -85,7 +85,7 @@ min-height:0;
       }
     }
   
-    .projects {
-      grid-template-columns: 1fr;
+    .work-info {
+      grid-template-columns: repeat(1,1fr);
     }
   }
