@@ -1,4 +1,4 @@
-$primary-color: rgb(59, 55, 55);
+$primary-color: #444;
 $secondary-color: #1c911cad;
 $show-home-image: true;
 $home-image: url(../img/studio1.jpg);
@@ -26,5 +26,47 @@ $background-opacity: 0.5;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+//Set Text Color 
+//Example of a function not a mixin because it returns something
+
+@function set-text-color($color){
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else{
+    @return #fff;
+  }
+}
+
+//Media Query Mixins
+
+@mixin mediaSm {
+  @media screen and (max-width:500px){
+    //anything here is only applied if screen is 500px or less
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width:768px){
+    //anything here is only applied if screen is 500px or less
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width:769px) and (max-width:1170px){
+    //anything here is only applied if screen is 500px or less
+    @content;
+  }
+}
+
+
+@mixin mediaXl {
+  @media screen and (min-width:1171px){
+    //anything here is only applied if screen is 500px or less
+    @content;
   }
 }
