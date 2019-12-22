@@ -71,7 +71,6 @@
     display: inline-block;
     position: relative;
     font-size: 30px;
-    text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
     color: #fff;
@@ -97,7 +96,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Solway", serif;
+  font-family: "Courier Prime", monospace;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/studio1.jpg);
