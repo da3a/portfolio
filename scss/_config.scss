@@ -13,6 +13,8 @@ $background-opacity: 0.5;
     &#bg-img {
       background-image: $home-image;
       background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
       background-attachment: fixed;
       background-size: cover;
 
