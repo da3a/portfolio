@@ -101,6 +101,8 @@ body {
   body#bg-img {
     background-image: url(../img/studio1.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
