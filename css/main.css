@@ -99,7 +99,8 @@ body {
   font-family: "Courier Prime", monospace;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/studio1.jpg);
+    background-image: url(../img/studio1.jpg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
