@@ -11,7 +11,8 @@ $background-opacity: 0.5;
 @mixin background {
   @if $show-home-image {
     &#bg-img {
-      background: $home-image;
+      background-image: $home-image;
+      background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
 
@@ -29,17 +30,16 @@ $background-opacity: 0.5;
   }
 }
 
-//Set Text Color 
+//Set Text Color
 //Example of a function not a mixin because it returns something
 
-@function set-text-color($color){
+@function set-text-color($color) {
   @if (lightness($color) > 40) {
     @return #000;
-  } @else{
+  } @else {
     @return #fff;
   }
 }
-
 
 // Media Query Mixins
 @mixin mediaSm {
