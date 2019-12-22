@@ -71,7 +71,6 @@
     display: inline-block;
     position: relative;
     font-size: 30px;
-    text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
     color: #fff;
@@ -97,7 +96,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Solway', serif;
+  font-family: "Courier Prime", monospace;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/studio1.jpg);
@@ -160,7 +159,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio"  "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
