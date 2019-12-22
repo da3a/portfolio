@@ -57,7 +57,7 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #1c911cad;
+      border: solid 3px #9d5257;
       background-repeat: no-repeat;
       background-size: cover; }
   .menu .nav-item {
@@ -66,18 +66,18 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #1c911cad; }
+      color: #9d5257; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 1rem;
     padding: 1rem 0;
     font-weight: 300;
     color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #1c911cad; }
+      color: #9d5257; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -103,8 +103,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    background-size: cover; }
+    background-attachment: fixed; }
     body#bg-img:after {
       content: "";
       position: absolute;
@@ -123,14 +122,14 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 5rem; }
+    font-size: 3rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2 rem;
-    padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5);
-    font-size: 3rem; }
+    font-size: 1rem;
+    font-weight: 500; }
 
 a {
   color: white;
@@ -142,7 +141,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #1c911cad; }
+  color: #9d5257; }
 
 main {
   padding: 4rem;
@@ -152,7 +151,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #1c911cad;
+        color: #9d5257;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -168,10 +167,10 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #1c911cad 3px solid; }
+    border: #9d5257 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1rem; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -181,7 +180,7 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #1c911cad 5px solid; }
+    border-bottom: #9d5257 5px solid; }
 
 .work-info {
   display: grid;
@@ -192,7 +191,7 @@ main {
     border: 3px #fff solid; }
     .work-info img:hover {
       opacity: 0.5;
-      border-color: #1c911cad;
+      border-color: #9d5257;
       transition: all 0.5s ease-out; }
 
 .contact-info {
@@ -208,10 +207,10 @@ main {
     transition: all 0.5s ease-out; }
     .contact-info div:hover {
       padding: 0.5rem 1.5rem;
-      background-color: #1c911cad;
-      color: #fff; }
+      background-color: #9d5257;
+      color: #000; }
       .contact-info div:hover span {
-        color: #fff; }
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -219,8 +218,8 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #1c911cad;
-    color: #fff; }
+    background: #9d5257;
+    color: #000; }
 
 .btn-dark {
   background: black;
