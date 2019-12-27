@@ -1,4 +1,5 @@
 //select DOM items
+import "../css/main.css";
 
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
