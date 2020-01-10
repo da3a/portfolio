@@ -57,7 +57,7 @@
       height: 250px;
       background: url(images/portrait.jpg);
       border-radius: 50%;
-      border: solid 3px #9d5257;
+      border: solid 3px #cec9c9;
       background-repeat: no-repeat;
       background-size: cover; }
   .menu .nav-item {
@@ -66,7 +66,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #9d5257; }
+      color: #cec9c9; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -78,7 +78,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #9d5257; }
+      color: #cec9c9; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -155,7 +155,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #9d5257; }
+  color: #cec9c9; }
 
 main {
   padding: 4rem;
@@ -165,7 +165,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #9d5257;
+        color: #cec9c9;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -181,7 +181,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #9d5257 3px solid; }
+    border: #cec9c9 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1rem; }
@@ -194,19 +194,17 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #9d5257 5px solid; }
+    border-bottom: #cec9c9 5px solid; }
 
-.work-info {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .work-info img {
-    width: 100%;
-    border: 3px #fff solid; }
-    .work-info img:hover {
-      opacity: 0.5;
-      border-color: #9d5257;
-      transition: all 0.5s ease-out; }
+.work-info img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px #fff solid; }
+  .work-info img:hover {
+    opacity: 0.5;
+    border-color: #cec9c9;
+    transition: all 0.5s ease-out; }
 
 .contact-info {
   display: flex;
@@ -221,7 +219,7 @@ main {
     transition: all 0.5s ease-out; }
     .contact-info div:hover {
       padding: 0.5rem 1.5rem;
-      background-color: #9d5257;
+      background-color: #cec9c9;
       color: #000; }
       .contact-info div:hover span {
         color: #000; }
@@ -232,7 +230,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #9d5257;
+    background: #cec9c9;
     color: #000; }
 
 .btn-dark {
@@ -303,6 +301,12 @@ main {
     main .sm-heading {
       margin-top: 1rem;
       font-size: 1rem; }
+    main .item, main .bio {
+      text-align: justify; }
+    main .list {
+      text-align: left; }
   .work-info {
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+    .work-info img {
+      width: 100%; } }
 

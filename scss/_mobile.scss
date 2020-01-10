@@ -85,9 +85,22 @@
       margin-top: 1rem;
       font-size: 1rem;
     }
+
+    .item,.bio {
+      text-align: justify;
+    }
+
+    .list {
+      text-align:left;
+    }
   }
 
   .work-info {
     grid-template-columns: repeat(1, 1fr);
+
+    img {
+      width: 100%;
+    }
+
   }
 }
