@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(images/8d305af49b36715b29d4bc274bad9fb6.jpg);
+      background: url(images/portrait.jpg);
       border-radius: 50%;
       border: solid 3px #9d5257;
       background-repeat: no-repeat;
@@ -100,7 +100,7 @@ body {
   font-family: "Courier Prime", monospace;
   line-height: 1.5; }
   body#bg-img {
-    background-image: url(images/98911e0cb4e05f67ec0e1d063eb0a39c.jpg);
+    background-image: url(images/studio1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -268,7 +268,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(images/8be498a9a919107c01f02efbf506d56a.jpg);
+      background: url(images/portrait_small.jpg);
       width: 150px;
       height: 150px;
       background-repeat: no-repeat;
