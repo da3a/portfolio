@@ -102,7 +102,7 @@
     &.show {
       transform: translate3d(0, 0, 0);
     }
-
+    
     &.current > a {
       color: $secondary-color;
     }
@@ -113,7 +113,7 @@
     position: relative;
     font-size: 1rem;
     text-transform: uppercase;
-    padding: 0.2rem 0;
+    padding: 0.5rem 0;
     font-weight: 300;
     color: set-text-color($primary-color);
     text-decoration: none;
