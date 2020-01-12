@@ -118,8 +118,8 @@ main {
 
 .work-info {
   img {
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    margin: 20px auto;
     width: 50%;
     border: 3px #fff solid;
     &:hover {
@@ -184,6 +184,12 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+
+.item {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @import "mobile";
