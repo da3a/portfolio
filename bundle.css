@@ -199,7 +199,7 @@ main {
 .work-info img {
   display: block;
   margin: 20px auto;
-  width: 50%;
+  width: 30%;
   border: 3px #fff solid; }
   .work-info img:hover {
     opacity: 0.5;
@@ -207,7 +207,7 @@ main {
     transition: all 0.5s ease-out; }
 
 .contact-info {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1rem; }
