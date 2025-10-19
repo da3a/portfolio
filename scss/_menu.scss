@@ -1,3 +1,7 @@
+@use "sass:color";
+
+@use 'config';
+
 //Menu Button
 
 .menu-btn {
@@ -6,14 +10,14 @@
 	right: 35px;
 	top: 35px;
 	cursor: pointer;
-	@include easeOut;
+	@include config.easeOut;
 
 	.btn-line {
 		width: 28px;
 		height: 3px;
 		margin: 0 0 5px 0;
-		background: set-text-color($primary-color);
-		@include easeOut;
+		background: set-text-color(config.$primary-color);
+		@include config.easeOut;
 	}
 
 	//rotate into x with menu lines
@@ -63,10 +67,10 @@
 	&-nav {
 		margin: 0;
 		padding: 0;
-		background: darken($primary-color, 5);
+		background: color.adjust(config.$primary-color, $lightness:-5%);
 		list-style: none;
 		transform: translate3d(0, -100%, 0);
-		@include easeOut;
+		@include config.easeOut;
 
 		&.show {
 			transform: translate3d(0, 0, 0);
@@ -76,9 +80,9 @@
 	//Branding side
 
 	&-branding {
-		background: $primary-color;
+		background: config.$primary-color;
 		transform: translate3d(0, 100%, 0);
-		@include easeOut;
+		@include config.easeOut;
 
 		&.show {
 			transform: translate3d(0, 0, 0);
@@ -89,7 +93,7 @@
 			height: 250px;
 			background: url('../images/portrait.jpg');
 			border-radius: 50%;
-			border: solid 3px $secondary-color;
+			border: solid 3px config.$secondary-color;
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
@@ -97,14 +101,14 @@
 
 	.nav-item {
 		transform: translate3d(600px, 0, 0);
-		@include easeOut;
+		@include config.easeOut;
 
 		&.show {
 			transform: translate3d(0, 0, 0);
 		}
 
 		&.current > a {
-			color: $secondary-color;
+			color: config.$secondary-color;
 		}
 	}
 
@@ -115,12 +119,12 @@
 		text-transform: uppercase;
 		padding: 0.5rem 0;
 		font-weight: 300;
-		color: set-text-color($primary-color);
+		color: set-text-color(config.$primary-color);
 		text-decoration: none;
-		@include easeOut;
+		@include config.easeOut;
 
 		&:hover {
-			color: $secondary-color;
+			color: config.$secondary-color;
 		}
 	}
 }

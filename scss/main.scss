@@ -1,14 +1,16 @@
-@import 'config';
-@import 'menu';
+@use "sass:color";
 
+@use 'config';
+@use 'menu';
+@use 'mobile';
 * {
 	box-sizing: border-box;
 }
 
 body {
-	@include background;
-	background: $primary-color;
-	color: set-text-color($primary-color);
+	@include config.background;
+	background: config.$primary-color;
+	color: set-text-color(config.$primary-color);
 	height: 100%;
 	margin: 0;
 	font-family: 'Courier Prime', monospace;
@@ -29,7 +31,7 @@ h3 {
 
 	&.sm-heading {
 		margin-bottom: 2 rem;
-		background: rgba(lighten($primary-color, 2), 0.5);
+		background: color.adjust(config.$primary-color, $lightness : -2%, $alpha: 0.5);
 		font-size: 1rem;
 		font-weight: 500;
 	}
@@ -47,12 +49,12 @@ header {
 }
 
 .text-secondary {
-	color: $secondary-color;
+	color: config.$secondary-color;
 }
 
 main {
 	padding: 4rem;
-	min-height: calc(100vh-60px);
+	min-height: calc(100vh - 60px);
 
 	.icons {
 		margin-top: 1rem;
@@ -61,8 +63,8 @@ main {
 			padding: 0.4rem;
 
 			&:hover {
-				color: $secondary-color;
-				@include easeOut();
+				color: config.$secondary-color;
+				@include config.easeOut();
 			}
 		}
 	}
@@ -87,7 +89,7 @@ main {
 		grid-area: bioimage;
 		margin: auto;
 		border-radius: 50%;
-		border: $secondary-color 3px solid;
+		border: config.$secondary-color 3px solid;
 	}
 
 	.bio {
@@ -98,7 +100,7 @@ main {
 	.job-1 {
 		grid-area: job1;
 	}
-
+	
 	.job-2 {
 		grid-area: job2;
 	}
@@ -108,9 +110,9 @@ main {
 	}
 
 	.job {
-		background: lighten($primary-color, 5);
+		background: color.adjust(config.$primary-color, $lightness: -5%);
 		padding: 0.5rem;
-		border-bottom: $secondary-color 5px solid;
+		border-bottom: config.$secondary-color 5px solid;
 	}
 }
 
@@ -124,8 +126,8 @@ main {
 		border: 3px #fff solid;
 		&:hover {
 			opacity: 0.5;
-			border-color: $secondary-color;
-			@include easeOut;
+			border-color: config.$secondary-color;
+			@include config.easeOut;
 		}
 	}
 }
@@ -141,14 +143,14 @@ main {
 		border: 3px #fff solid;
 		padding: 1.5rem 2.5rem;
 		margin-bottom: 1rem;
-		@include easeOut;
+		@include config.easeOut;
 
 		&:hover {
 			padding: 0.5rem 1.5rem;
-			background-color: $secondary-color;
-			color: set-text-color($secondary-color);
+			background-color: config.$secondary-color;
+			color: set-text-color(config.$secondary-color);
 			span {
-				color: set-text-color($secondary-color);
+				color: set-text-color(config.$secondary-color);
 			}
 		}
 	}
@@ -161,28 +163,29 @@ main {
 	border: 0;
 	margin-bottom: 0.3rem;
 	&:hover {
-		background: $secondary-color;
-		color: set-text-color($secondary-color);
+		background: config.$secondary-color;
+		color: set-text-color(config.$secondary-color);
 	}
 }
 
+
 .btn-dark {
 	@extend .btn;
-	background: darken($primary-color, 50);
+	background: color.adjust(config.$primary-color, $lightness: -50%);
 	color: #fff;
 }
 
 .btn-light {
 	@extend .btn;
-	background: lighten($primary-color, 50);
+	background: color.adjust(config.$primary-color, $lightness: 50%);
 	color: #333;
 }
 
 #main-footer {
 	text-align: center;
 	padding: 1rem;
-	background: darken($primary-color, 10);
-	color: set-text-color($primary-color);
+	//background: color.adjust(config.$primary-color, $lightness : -10%);
+	color: set-text-color(config.$primary-color);
 	height: 80px;
 }
 
@@ -192,4 +195,4 @@ main {
 	justify-content: center;
 }
 
-@import 'mobile';
+
