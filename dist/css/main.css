@@ -10,7 +10,7 @@
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: set-text-color(#444);
+  background: #fff;
   transition: all 0.5s ease-out;
 }
 .menu-btn.close {
@@ -66,8 +66,8 @@
   transform: translate3d(0, 0, 0);
 }
 .menu-branding .portrait {
-  width: 250px;
-  height: 250px;
+  width: 25px;
+  height: 25px;
   background: url("../images/portrait.jpg");
   border-radius: 50%;
   border: solid 3px rgb(206, 201, 201);
@@ -98,32 +98,25 @@
 .menu .nav-link:hover {
   color: rgb(206, 201, 201);
 }
-
-.nav-item:nth-child(1) {
+.menu .nav-item:nth-child(1) {
   transition-delay: 0.1s;
 }
-
-.nav-item:nth-child(2) {
+.menu .nav-item:nth-child(2) {
   transition-delay: 0.2s;
 }
-
-.nav-item:nth-child(3) {
+.menu .nav-item:nth-child(3) {
   transition-delay: 0.3s;
 }
-
-.nav-item:nth-child(4) {
+.menu .nav-item:nth-child(4) {
   transition-delay: 0.4s;
 }
-
-.nav-item:nth-child(5) {
+.menu .nav-item:nth-child(5) {
   transition-delay: 0.5s;
 }
-
-.nav-item:nth-child(6) {
+.menu .nav-item:nth-child(6) {
   transition-delay: 0.6s;
 }
-
-.nav-item:nth-child(7) {
+.menu .nav-item:nth-child(7) {
   transition-delay: 0.7s;
 }
 
@@ -232,7 +225,7 @@ body#bg-img:after {
 }
 body {
   background: #444;
-  color: set-text-color(#444);
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: "Courier Prime", monospace;
@@ -355,7 +348,7 @@ main#home h1 {
 .contact-info div:hover {
   padding: 0.5rem 1.5rem;
   background-color: rgb(206, 201, 201);
-  color: set-text-color(rgb(206, 201, 201));
+  color: #000;
 }
 .contact-info div:hover span {
   color: set-text-color(rgb(206, 201, 201));
@@ -369,7 +362,7 @@ main#home h1 {
 }
 .btn:hover, .btn-light:hover, .btn-dark:hover {
   background: rgb(206, 201, 201);
-  color: set-text-color(rgb(206, 201, 201));
+  color: #000;
 }
 
 .btn-dark {
@@ -385,7 +378,7 @@ main#home h1 {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  color: set-text-color(#444);
+  color: #fff;
   height: 80px;
 }
 

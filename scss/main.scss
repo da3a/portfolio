@@ -7,10 +7,11 @@
 	box-sizing: border-box;
 }
 
+
 body {
 	@include config.background;
 	background: config.$primary-color;
-	color: set-text-color(config.$primary-color);
+	color: config.set-text-color(config.$primary-color);
 	height: 100%;
 	margin: 0;
 	font-family: 'Courier Prime', monospace;
@@ -148,7 +149,7 @@ main {
 		&:hover {
 			padding: 0.5rem 1.5rem;
 			background-color: config.$secondary-color;
-			color: set-text-color(config.$secondary-color);
+			color: config.set-text-color(config.$secondary-color);
 			span {
 				color: set-text-color(config.$secondary-color);
 			}
@@ -164,7 +165,7 @@ main {
 	margin-bottom: 0.3rem;
 	&:hover {
 		background: config.$secondary-color;
-		color: set-text-color(config.$secondary-color);
+		color: config.set-text-color(config.$secondary-color);
 	}
 }
 
@@ -185,7 +186,7 @@ main {
 	text-align: center;
 	padding: 1rem;
 	//background: color.adjust(config.$primary-color, $lightness : -10%);
-	color: set-text-color(config.$primary-color);
+	color: config.set-text-color(config.$primary-color);
 	height: 80px;
 }
 
