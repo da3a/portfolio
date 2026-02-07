@@ -151,7 +151,7 @@ main {
 			background-color: config.$secondary-color;
 			color: config.set-text-color(config.$secondary-color);
 			span {
-				color: set-text-color(config.$secondary-color);
+				color: config.set-text-color(config.$secondary-color);
 			}
 		}
 	}
