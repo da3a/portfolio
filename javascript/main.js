@@ -14,23 +14,23 @@ let showMenu = false;
 menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
-    if (!showMenu) {
-        menuBtn.classList.add("close");
-        menu.classList.add("show");
-        menuNav.classList.add("show");
-        menuBranding.classList.add("show");
-        navItems.forEach(element => {
-            element.classList.add("show");
-        });
-        showMenu = true;
-    } else {
-        menuBtn.classList.remove("close");
-        menu.classList.remove("show");
-        menuNav.classList.remove("show");
-        menuBranding.classList.remove("show");
-        navItems.forEach(element => {
-            element.classList.remove("show");
-        });
-        showMenu = false;
-    }
+  if (!showMenu) {
+    menuBtn.classList.add("close");
+    menu.classList.add("show");
+    menuNav.classList.add("show");
+    menuBranding.classList.add("show");
+    navItems.forEach(element => {
+      element.classList.add("show");
+    });
+    showMenu = true;
+  } else {
+    menuBtn.classList.remove("close");
+    menu.classList.remove("show");
+    menuNav.classList.remove("show");
+    menuBranding.classList.remove("show");
+    navItems.forEach(element => {
+      element.classList.remove("show");
+    });
+    showMenu = false;
+  }
 }
