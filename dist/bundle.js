@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/javascript/main.js"
-/*!********************************!*\
-  !*** ./src/javascript/main.js ***!
-  \********************************/
+/***/ "./src/index.js"
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/main.css */ \"./src/css/main.css\");\n//select DOM items\n\nvar menuBtn = document.querySelector(\".menu-btn\");\nvar menu = document.querySelector(\".menu\");\nvar menuNav = document.querySelector(\".menu-nav\");\nvar menuBranding = document.querySelector(\".menu-branding\");\nvar navItems = document.querySelectorAll(\".nav-item\");\n\n//Set the initial state of the menu\n\nvar showMenu = false;\nmenuBtn.addEventListener(\"click\", toggleMenu);\nfunction toggleMenu() {\n  if (!showMenu) {\n    menuBtn.classList.add(\"close\");\n    menu.classList.add(\"show\");\n    menuNav.classList.add(\"show\");\n    menuBranding.classList.add(\"show\");\n    navItems.forEach(function (element) {\n      element.classList.add(\"show\");\n    });\n    showMenu = true;\n  } else {\n    menuBtn.classList.remove(\"close\");\n    menu.classList.remove(\"show\");\n    menuNav.classList.remove(\"show\");\n    menuBranding.classList.remove(\"show\");\n    navItems.forEach(function (element) {\n      element.classList.remove(\"show\");\n    });\n    showMenu = false;\n  }\n}\n\n//# sourceURL=webpack://portfolio/./src/javascript/main.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/main.css */ \"./src/css/main.css\");\n\nvar menuBtn = document.querySelector(\".menu-btn\");\nvar menu = document.querySelector(\".menu\");\nvar menuNav = document.querySelector(\".menu-nav\");\nvar menuBranding = document.querySelector(\".menu-branding\");\nvar navItems = document.querySelectorAll(\".nav-item\");\n\n//Set the initial state of the menu\n\nvar showMenu = false;\nmenuBtn.addEventListener(\"click\", toggleMenu);\nfunction toggleMenu() {\n  if (!showMenu) {\n    menuBtn.classList.add(\"close\");\n    menu.classList.add(\"show\");\n    menuNav.classList.add(\"show\");\n    menuBranding.classList.add(\"show\");\n    navItems.forEach(function (element) {\n      element.classList.add(\"show\");\n    });\n    showMenu = true;\n  } else {\n    menuBtn.classList.remove(\"close\");\n    menu.classList.remove(\"show\");\n    menuNav.classList.remove(\"show\");\n    menuBranding.classList.remove(\"show\");\n    navItems.forEach(function (element) {\n      element.classList.remove(\"show\");\n    });\n    showMenu = false;\n  }\n}\n\n//# sourceURL=webpack://portfolio/./src/index.js?\n}");
 
 /***/ },
 
@@ -75,7 +75,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-ext
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	let __webpack_exports__ = __webpack_require__("./src/javascript/main.js");
+/******/ 	let __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ })()
 ;

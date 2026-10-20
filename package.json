@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Responsive portfolio website",
-  "main": "index.js",
+  "main": "index.html",
   "homepage": "https://da3a.github.cio/portfolio",
   "scripts": {
     "build": "webpack --config webpack.config.js",

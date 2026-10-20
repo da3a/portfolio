@@ -65,8 +65,6 @@
 		overflow: hidden;
 	}
 
-
-
 	&-nav {
 		margin: 0;
 		padding: 0;
@@ -92,8 +90,8 @@
 		}
 
 		.portrait {
-			width: 25px;
-			height: 25px;
+			width: 250px;
+			height: 250px;
 			background: url('../images/portrait.jpg');
 			border-radius: 50%;
 			border: solid 3px config.$secondary-color;
