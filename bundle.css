@@ -68,7 +68,7 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../images/portrait.jpg");
+  background: url(images/portrait.jpg);
   border-radius: 50%;
   border: solid 3px rgb(206, 201, 201);
   background-repeat: no-repeat;
@@ -163,7 +163,7 @@
     transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url("../images/portrait_small.jpg");
+    background: url(images/portrait_small.jpg);
     width: 200px;
     height: 200px;
     background-repeat: no-repeat;
@@ -217,7 +217,7 @@
 }
 
 body#bg-img {
-  background-image: url(../images/studio1.jpg);
+  background-image: url(images/studio1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -398,4 +398,3 @@ main#home h1 {
   justify-content: center;
 }
 
-/*# sourceMappingURL=main.css.map */
