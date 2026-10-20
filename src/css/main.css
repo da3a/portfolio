@@ -347,16 +347,20 @@ main#home h1 {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1rem;
+  text-align: center;
 }
 .contact-info div {
   font-size: 0.8rem;
   border: 3px #fff solid;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 1.5rem;
   margin-bottom: 1rem;
   transition: all 0.5s ease-out;
 }
+.contact-info div .text-secondary {
+  justify-content: center;
+}
 .contact-info div:hover {
-  padding: 0.5rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   background-color: rgb(206, 201, 201);
   color: #000;
 }
