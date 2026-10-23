@@ -211,6 +211,11 @@
   main .work-info img {
     width: 100%;
   }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    text-align: center;
+  }
 }
 * {
   box-sizing: border-box;
@@ -279,7 +284,7 @@ header {
 }
 
 main {
-  padding: 4rem;
+  padding: 3rem;
   min-height: calc(100vh - 60px);
 }
 main .icons {
